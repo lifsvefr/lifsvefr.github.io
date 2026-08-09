@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Lífsvefr · The Life-Web</title>
+<meta name="theme-color" content="#0D1A36">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Caudex:ital,wght@0,400;0,700;1,400&family=Alegreya+SC:wght@500;700&family=Winky+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#E7ECF8;--sun:#C9A227;--sunglow:#E8C766;--mut:#AEBAD8;--navy:#060D1E}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{min-height:100%}
+  body{font-family:'Caudex',Georgia,serif;background:linear-gradient(180deg,#060D1E 0%,#0B1B3C 55%,#0A1226 100%);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .stars{position:fixed;inset:0;pointer-events:none;z-index:0}
+  .stars span{position:absolute;animation:tw var(--d,3s) ease-in-out infinite var(--delay,0s);font-size:var(--sz,.8rem);color:var(--col,#E8C766);text-shadow:0 0 6px var(--col,#E8C766);line-height:1}
+  @keyframes tw{0%,100%{opacity:0;transform:scale(.3)}50%{opacity:.85;transform:scale(1)}}
+  main{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:56px 22px 48px;text-align:center}
+  .kicker{font-family:'Alegreya SC',serif;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--sunglow);text-shadow:0 0 8px var(--navy),0 0 16px var(--navy)}
+  h1{font-family:'Homemade Apple',cursive;font-weight:400;font-size:clamp(34px,7vw,52px);margin:14px 0 10px;text-shadow:2px 0 0 var(--navy),-2px 0 0 var(--navy),0 2px 0 var(--navy),0 -2px 0 var(--navy),0 0 14px var(--navy),0 0 28px var(--navy)}
+  .tag{font-family:'Winky Sans',sans-serif;font-size:15px;color:var(--mut)}
+  .loom{font-family:'Winky Sans',sans-serif;font-size:13px;color:var(--mut);opacity:.85;margin-top:8px;font-style:italic}
+  .threadline{height:2px;max-width:260px;margin:26px auto 40px;background:linear-gradient(90deg,transparent,var(--sun),transparent);border-radius:2px}
+  .doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;text-align:left}
+  a.door{display:flex;flex-direction:column;gap:10px;background:rgba(18,29,60,.75);border:1px solid rgba(201,162,39,.35);border-radius:20px;padding:22px 20px 20px;text-decoration:none;color:var(--ink);box-shadow:0 0 14px rgba(232,199,102,.07);transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease}
+  a.door:hover{transform:translateY(-3px);border-color:var(--sun);box-shadow:0 6px 22px rgba(232,199,102,.18)}
+  .door .ic{width:64px;height:64px;border-radius:16px;object-fit:cover;border:1px solid rgba(201,162,39,.45)}
+  .door h2{font-family:'Alegreya SC',serif;font-size:19px;letter-spacing:.02em}
+  .door .en{font-family:'Winky Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sunglow)}
+  .door p{font-family:'Winky Sans',sans-serif;font-size:13.5px;line-height:1.6;color:var(--mut)}
+  .door .go{margin-top:auto;font-family:'Alegreya SC',serif;font-weight:700;font-size:13px;color:var(--sunglow)}
+  footer{position:relative;z-index:1;text-align:center;padding:26px 20px 42px;font-family:'Winky Sans',sans-serif;font-size:13px;color:var(--mut)}
+  footer .motto{font-family:'Caudex',serif;font-style:italic;font-size:15px;color:var(--ink);margin-bottom:6px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+
+<main>
+  <div class="kicker">Lífsvefr</div>
+  <h1>The Life-Web</h1>
+  <div class="tag">Small apps and tall tales, woven from the same golden thread.</div>
+  <div class="loom">The loom is still warming — more threads to come.</div>
+  <div class="threadline"></div>
+
+  <div class="doors">
+    <a class="door" href="./life-tracker/">
+      <img class="ic" src="./life-tracker/icon-192.png" alt="" onerror="this.style.display='none'">
+      <span class="en">Life Tracker</span>
+      <h2>Lífsteinn</h2>
+      <p>Tasks, meals, water, fasting, moons, and the loom of daily life — a life-stone to carry your days.</p>
+      <span class="go">Enter →</span>
+    </a>
+    <a class="door" href="./notebook/">
+      <img class="ic" src="./notebook/icon-192.png" alt="" onerror="this.style.display='none'">
+      <span class="en">Story Threads Notebook</span>
+      <h2>Söguþræðir</h2>
+      <p>Worldbuilding sheets of rag paper, written with glass pens in many inks. Every scrap becomes a page.</p>
+      <span class="go">Enter →</span>
+    </a>
+    <a class="door" href="./picture-stories/">
+      <img class="ic" src="./picture-stories/icon-192.png" alt="" onerror="this.style.display='none'">
+      <span class="en">Picture Stories</span>
+      <h2>Myndasögur</h2>
+      <p>A quiet shelf for comics and picture-books — every panel a doorway, read under the stars.</p>
+      <span class="go">Enter →</span>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <div class="motto">One life, many threads.</div>
+  <div>First lit under the Bondfire Moon 🔥</div>
+</footer>
+
+<script>
+'use strict';
+(function(){
+  const g=['✦','✧','·','✶','⋆'];let h='';
+  for(let i=0;i<54;i++){
+    const gold=Math.random()<.45;
+    h+='<span style="left:'+(Math.random()*97).toFixed(1)+'%;top:'+(Math.random()*95).toFixed(1)+'%;--d:'+(2.2+Math.random()*3.4).toFixed(1)+'s;--delay:'+(Math.random()*4).toFixed(1)+'s;--sz:'+(0.4+Math.random()*0.55).toFixed(2)+'rem;--col:'+(gold?'#E8C766':'#F4F7FF')+'">'+g[i%g.length]+'</span>';
+  }
+  document.getElementById('stars').innerHTML=h;
+})();
+</script>
+</body>
+</html>
