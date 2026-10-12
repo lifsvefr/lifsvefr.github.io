@@ -1,0 +1,23 @@
+{
+  "id": "lifsvefr",
+  "name": "Lífsvefr · The Life-Weave",
+  "short_name": "Lífsvefr",
+  "description": "Small apps and tall tales, woven from one golden thread.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#060D1E",
+  "theme_color": "#060D1E",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-192-maskable.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Lífsteinn · Life Stone", "short_name": "Lífsteinn", "url": "./lifestone/", "icons": [{ "src": "lifestone/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Söguþræðir · Scriptorium", "short_name": "Söguþræðir", "url": "./scriptorium/", "icons": [{ "src": "scriptorium/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Nafnaþula · Name List", "short_name": "Nafnaþula", "url": "./namelist/", "icons": [{ "src": "namelist/icon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ]
+}
