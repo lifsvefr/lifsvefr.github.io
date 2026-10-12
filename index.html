@@ -112,6 +112,9 @@ document.querySelectorAll('.door .ic img').forEach(function(im){
   }
   document.getElementById('stars').innerHTML=h;
 })();
+/* the hub app only covers this one page (so Lífsteinn and Söguþræðir stay their own separate apps);
+   show the address as /index.html so Chrome offers to install it */
+if(location.pathname==='/'){ try{ history.replaceState(null,'','/index.html'+location.search+location.hash); }catch(e){} }
 /* lets Lífsvefr be installed as an app, and open without internet */
 if('serviceWorker' in navigator&&(location.protocol==='https:'||location.hostname==='localhost')){ navigator.serviceWorker.register('./sw.js',{scope:'./'}).catch(function(){}); }
 </script>
